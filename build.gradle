@@ -32,6 +32,9 @@ dependencies {
     compile wpilib()
     compile ctre()
     compile navx()
+    exec {
+        commandLine "GitJavaVersion.cmd", ">src/main/java/org/usfirst/frc1388/BuildInfo.java"
+    }
 }
 
 // Setting up my Jar File. In this case, adding all libraries into the main jar ('fat jar')
